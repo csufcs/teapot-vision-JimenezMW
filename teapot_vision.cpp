@@ -194,6 +194,7 @@ public:
       // do something here to check to see if the teapots
       // are in or out of the view frustum. Set the visibility
       // flag as needed.
+<<<<<<< HEAD
 		// currentCamera->lookAtMatrix(lookAtMatrix);
 		glm::mat4 lookAtMatrix; 
 		mainCamera.lookAtMatrix(lookAtMatrix);
@@ -208,6 +209,9 @@ public:
 		else
 			teapots[i]->visible = false;
 		
+=======
+      teapots[i]->visible = true;
+>>>>>>> 4f421f8f20d27d061316197d49a3b69b710abef5
     }
   }
 
@@ -224,7 +228,10 @@ public:
     glm::mat4 clipPlaneMatrix;
     mainCamera.perspectiveMatrix(clipPlaneMatrix, ratio);
     checkVisibility(clipPlaneMatrix);
+<<<<<<< HEAD
 	//checkVisibility(lookAtMatrix);
+=======
+>>>>>>> 4f421f8f20d27d061316197d49a3b69b710abef5
 
     currentCamera->perspectiveMatrix(projectionMatrix, ratio);
 
